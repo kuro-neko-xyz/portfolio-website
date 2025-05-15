@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Karla";
+  src: url("/public/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+main {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+}
+
+#about-me {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me > * {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#about-me img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#about-me h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+#about-me h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+#about-me p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+#about-me a {
+  text-decoration: none;
+  color: #ff6347;
+}
+
+#project-1 {
+}
+
+#project-2 {
+}
+
+#project-3 {
+}
