@@ -75,11 +75,81 @@ section {
   color: #ff6347;
 }
 
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.project:nth-child(even) {
+  grid-template-areas:
+    "image title"
+    "image description";
+}
+
+.project:nth-child(odd) {
+  grid-template-areas:
+    "title image"
+    "description image";
+}
+
+.project img {
+  grid-area: image;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.project h2 {
+  grid-area: title;
+  font-size: 2rem;
+  margin: auto 5% 10px;
+  padding: 0;
+}
+
+.project p {
+  grid-area: description;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 5% auto;
+}
+
 #project-1 {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+
+#project-1 a {
+  text-decoration: none;
+  color: white;
 }
 
 #project-2 {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+#project-2 a {
+  text-decoration: none;
+  color: white;
 }
 
 #project-3 {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+#project-3 a {
+  text-decoration: none;
+  color: white;
 }
